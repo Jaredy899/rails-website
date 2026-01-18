@@ -1,0 +1,18 @@
+<% content_for :title, @post.title %>
+<% content_for :description, @post.description %>
+
+<main class="container mx-auto px-4 py-8">
+  <div class="logo-container-blog">
+    <%= link_to root_path, class: "logo-link", aria: { label: "Return to home page" } do %>
+      <%= render "shared/jc_logo" %>
+    <% end %>
+  </div>
+  <article class="prose dark:prose-invert mx-auto fade-in blog-post">
+    <time class="text-sm text-gray-500 dark:text-gray-400 blog-date">
+      <%= @post.formatted_date %>
+    </time>
+    <div class="mt-8 blog-content">
+      <%= @post.rendered_content %>
+    </div>
+  </article>
+</main>

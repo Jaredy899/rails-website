@@ -1,0 +1,24 @@
+<% content_for :title, "Blog - Jared Cervantes" %>
+<% content_for :description, "Blog posts by Jared Cervantes" %>
+
+<div class="blog-index">
+  <div class="logo-container-small">
+    <%= link_to root_path, class: "logo-link", aria: { label: "Return to home page" } do %>
+      <%= render "shared/jc_logo" %>
+    <% end %>
+  </div>
+  
+  <% if @posts.empty? %>
+    <p class="no-posts">No blog posts yet.</p>
+  <% else %>
+    <% @posts.each do |post| %>
+      <%= link_to post_path(post.clean_slug), class: "blog-card-link", aria: { label: "Read blog post: #{post.title}" } do %>
+        <article class="blog-card">
+          <h2 class="blog-title"><%= post.title %></h2>
+          <p class="blog-desc"><%= post.description %></p>
+          <time class="blog-date"><%= post.formatted_date %></time>
+        </article>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
