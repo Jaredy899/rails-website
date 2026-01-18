@@ -1,0 +1,46 @@
+# Name of your application (used for container naming)
+service: rails-website
+
+# Docker image name
+image: your-dockerhub-username/rails-website
+
+# Deploy to these servers (replace with your server IP)
+servers:
+  web:
+    - 192.168.1.1
+    # Add more servers for load balancing:
+    # - 192.168.1.2
+
+# Container registry credentials (set these as secrets)
+registry:
+  username: your-dockerhub-username
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+# Environment variables for the app
+env:
+  secret:
+    - RAILS_MASTER_KEY
+  clear:
+    RAILS_LOG_TO_STDOUT: true
+    RAILS_SERVE_STATIC_FILES: true
+
+# Health check endpoint
+healthcheck:
+  path: /up
+  port: 3000
+
+# SSH user for deployment (usually root or a deploy user)
+ssh:
+  user: root
+
+# Optional: Use a reverse proxy like Traefik
+# proxy:
+#   ssl: true
+#   host: yourdomain.com
+
+# Optional: Build args
+builder:
+  arch: amd64
+  # For ARM servers (like Oracle Cloud free tier):
+  # arch: arm64

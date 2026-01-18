@@ -1,0 +1,27 @@
+# Ignore git
+.git
+.gitignore
+
+# Ignore logs
+log/*
+
+# Ignore temp files
+tmp/*
+
+# Ignore dev/test files
+.rspec
+.rubocop.yml
+coverage/
+
+# Ignore OS files
+.DS_Store
+
+# Ignore editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore mise
+.mise.toml
+mise.toml

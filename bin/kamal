@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "bundler/setup"
+
+ARGV.unshift("kamal") if ARGV.empty? || ARGV.first.start_with?("-")
+
+load Gem.bin_path("kamal", "kamal")
