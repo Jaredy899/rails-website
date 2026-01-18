@@ -1,82 +1,45 @@
 ---
-title: "The Beauty of Open Source"
-description: "Reflecting on why open source software matters and how it has shaped my career."
-pubDate: 2025-10-01
+title: "Why I Love Open Source"
+description: "My experience contributing to linutil and learning Git."
+pubDate: 2025-10-05
 draft: false
 ---
 
-# The Beauty of Open Source
+# Open Source
 
-Open source software has fundamentally changed how we build and share technology. It's not just about free software—it's about community, collaboration, and the democratization of knowledge.
+Over the past few months, I’ve been diving deep into the world of open source by contributing to [Linutil](https://github.com/ChrisTitusTech/linutil.git), a project by Chris Titus Tech, as well as other projects. This experience has been a fantastic way to learn not just about the code itself, but also about the tools and workflows that make open source possible.
 
-## Why Open Source Matters
+## Why I Love Open Source
 
-### Transparency
+One of the things I love most about open source software is the transparency. I trust open source because I can actually see the code for myself. There’s something empowering about knowing exactly what a program is doing on my system. If I have questions or concerns, I can dig into the source and find answers. This openness is a big reason why I’m happy to contribute my time and effort to these projects. It feels good to give back to a community that values collaboration and transparency.
 
-With open source, you can see exactly how software works:
+## Learning Git and Pull Requests
 
-```python
-# No hidden functionality
-def process_data(data):
-    """
-    Everything is visible and auditable.
-    No black boxes here.
-    """
-    return transform(data)
-```
+Before this, my experience with Git was pretty basic—just enough to push and pull changes for my own projects. But contributing to linutil has taken my Git skills to the next level. I’ve learned how to:
 
-### Community
+- **Fork repositories**
+- **Create branches for new features or bug fixes**
+- **Submit pull requests (PRs)**
+- **Collaborate with other contributors through code reviews**
 
-The best part of open source is the community:
+It’s been a bit intimidating at times, but seeing my contributions merged into the main project is incredibly rewarding.
 
-* Developers from around the world
-* Diverse perspectives and ideas
-* Shared knowledge and learning
-* Mentorship opportunities
+## Using Git for My Own Projects
 
-### Innovation
+I’ve also started using Git more seriously for my own web projects. Whether I’m building a blog in [Astro](https://jaredcervantes.com), [Nuxt](https://nuxt.jaredcervantes.com), [Next.js](https://next.jaredcervantes.com), [Hugo](https://hugo.jaredcervantes.com), or [Svelte](https://svelte.jaredcervantes.com), version control has become an essential part of my workflow. It’s made it so much easier to experiment, track changes, and roll back when things go wrong (in my [previous blog](/blog/astro) about my blog... I discussed that from now on, I'll be using Astro just to keep things simple!).
 
-Open source drives innovation by:
+## Scripting and Linux Distros
 
-1. Allowing anyone to contribute
-2. Building on existing work
-3. Rapid iteration and feedback
-4. Cross-pollination of ideas
+Another big part of contributing to linutil has been learning how to write and use scripts. I’ve been exploring different Linux distributions, testing scripts across environments, and making sure everything works as expected. So far, I’ve tested on **Debian, Ubuntu, Arch, Fedora, openSUSE, Solus, Void, Alpine, and NixOS**. Testing is a huge part of the process—sometimes it feels like I spend more time testing than coding! But it’s worth it to make sure the tools are reliable for everyone.
 
-## My Contributions
+My past [blog post](/blog/distros) shared my thoughts and experiences with each of these distros.
 
-I try to give back to the open source community by:
+## Tools That Help: Cursor and Beyond
 
-* Reporting bugs
-* Writing documentation
-* Submitting pull requests
-* Helping newcomers
+I use [Cursor](https://cursor.com) to help with some of the coding and navigation, but I’m also becoming more comfortable reading code directly. I’m starting to get a feel for what “good” code looks like, and I’m learning to spot things that don’t quite fit—even if I can’t always explain why at first.
 
-## Projects I Love
+One thing I’ve noticed is that “vibe coding”—just going with what feels right—can lead to mistakes. It’s easy to overlook edge cases or miss best practices if you’re not careful. I’m learning to slow down, review my work, and rely on testing and feedback from others.
 
-Some open source projects that have shaped my work:
+## Final Thoughts
 
-* **Ruby on Rails** - Web development framework
-* **Linux** - Operating system
-* **Git** - Version control
-* **PostgreSQL** - Database
-* **VS Code** - Code editor
-
-## Getting Started
-
-If you want to contribute to open source:
-
-```bash
-# Find a project you use and love
-git clone https://github.com/project/repo.git
-
-# Look for "good first issue" labels
-# Read the contributing guidelines
-# Start small and be patient
-```
-
-## Conclusion
-
-Open source is more than code—it's a philosophy of sharing and collaboration that makes technology better for everyone.
-
-*"Given enough eyeballs, all bugs are shallow."* - Linus's Law
+Contributing to open source has been a challenging but incredibly rewarding experience. I’m grateful for the opportunity to learn from others, improve my skills, and give back to the community. If you’re thinking about getting involved in open source, I highly recommend it—just be ready to learn a lot along the way!

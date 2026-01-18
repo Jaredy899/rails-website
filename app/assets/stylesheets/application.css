@@ -258,6 +258,7 @@ code {
   width: 400px;
   height: 400px;
   color: var(--text);
+  view-transition-name: jc-logo;
 }
 
 .home-link {
@@ -361,6 +362,14 @@ code {
   height: 60px;
   margin: 0 auto 2rem;
   color: var(--text);
+  view-transition-name: jc-logo;
+}
+
+/* View Transitions */
+::view-transition-old(jc-logo),
+::view-transition-new(jc-logo) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link {
@@ -444,6 +453,7 @@ code {
   left: 50%;
   transform: translateX(-50%);
   color: var(--text) !important;
+  view-transition-name: jc-logo;
 }
 
 .logo-container-blog svg {
