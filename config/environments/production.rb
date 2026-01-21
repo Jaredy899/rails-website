@@ -54,10 +54,13 @@ Rails.application.configure do
   config.i18n.fallbacks = true
 
   # Enable DNS rebinding protection and other `Host` header attacks.
+  # Allow the domain (with or without port), localhost, and the server IP
   config.hosts = [
-    "rails.jaredcervantes.com",
+    /.*\.jaredcervantes\.com/,  # Allow any subdomain of jaredcervantes.com
     "localhost",
-    "10.24.24.6"
+    /^localhost:\d+$/,           # Allow localhost with any port
+    "10.24.24.6",
+    /^10\.24\.24\.6(:\d+)?$/     # Allow IP with or without port
   ]
 
   # Skip DNS rebinding protection for the default health check endpoint.
