@@ -1,6 +1,6 @@
 services:
   web:
-    build: ghcr.io/Jaredy899/rails-website:main
+    build: ghcr.io/jaredy899/rails-website:main
     ports:
       - "3005:3000"
     environment:
